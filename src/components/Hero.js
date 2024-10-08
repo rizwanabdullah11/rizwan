@@ -9,7 +9,7 @@ const Hero = () => {
       <div className='container mx-auto px-4 flex flex-col-reverse md:flex-row items-center'>
         <div className='text-center ml-10 md:text-left md:w-1/2 md:pr-8 z-10 relative'>
           <h1 className='text-6xl font-bold'> 
-            I&apos;m{" "}a
+            I&apos;m{" "}
             <span className='bg-clip-text bg-gradient-to-r text-purple-800'>
               Rizwan Abdullah
             </span><br />
@@ -23,16 +23,16 @@ const Hero = () => {
           </p>
           {/* Social Media Icons */}
           <div className='flex justify-center md:justify-start mt-4 space-x-3'>
-            <a href="#" className="bg-purple-800 p-3 rounded-full transform hover:scale-110 transition duration-300">
+            <a href="https://www.linkedin.com/in/rizwan-abdullah-804208232/" className="bg-purple-800 p-3 rounded-full transform hover:scale-110 transition duration-300">
               <FaLinkedin className="text-xl" />
             </a>
-            <a href="#" className="bg-[#181717] p-3 rounded-full transform hover:scale-110 transition duration-300">
+            <a href="https://github.com/rizwanabdullah11/" className="bg-[#181717] p-3 rounded-full transform hover:scale-110 transition duration-300">
               <FaGithub className="text-white text-xl" />
             </a>
-            <a href="#" className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] p-3 rounded-full transform hover:scale-110 transition duration-300">
+            <a href="https://www.instagram.com/rizwan_abdullah11/" className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] p-3 rounded-full transform hover:scale-110 transition duration-300">
               <FaInstagram className="text-white text-xl" />
             </a>
-            <a href="#" className="bg-purple-800 p-3 rounded-full transform hover:scale-110 transition duration-300">
+            <a href="https://www.facebook.com/rizwan.abdullah.5458/" className="bg-purple-800 p-3 rounded-full transform hover:scale-110 transition duration-300">
               <FaFacebook className="text-white text-xl" />
             </a>
           </div>

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.74b9687c.css",
+    "main.js": "/static/js/main.071045b8.js",
+    "static/media/rizwanport.png": "/static/media/rizwanport.c37731e39433dcf70e02.png",
+    "static/media/Rizwan CV.pdf": "/static/media/Rizwan CV.073df35122c404329b55.pdf",
+    "static/media/eflyer.jpg": "/static/media/eflyer.9b99ee6c385faf52bc44.jpg",
+    "static/media/vrhub.jpg": "/static/media/vrhub.3070a15e04a940cc952c.jpg",
+    "static/media/medicine.jpg": "/static/media/medicine.367b8b859f6101c0cccf.jpg",
+    "static/media/rna.jpg": "/static/media/rna.fe0052e28f8f9bab6d98.jpg",
+    "static/media/project1.jpg": "/static/media/project1.2297d24f332b24118773.jpg",
+    "index.html": "/index.html",
+    "main.74b9687c.css.map": "/static/css/main.74b9687c.css.map",
+    "main.071045b8.js.map": "/static/js/main.071045b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74b9687c.css",
+    "static/js/main.071045b8.js"
+  ]
+}

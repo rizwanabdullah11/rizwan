@@ -16,7 +16,7 @@ const Education = () => {
     <div className="text-white bg-black py-24" id="education">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-6xl font-bold text-center mb-40 text-white">
-          EDUCATION
+          Education
         </h2>
         <div className="space-y-24">
           {educationData.map((edu, index) => (
