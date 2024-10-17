@@ -1,6 +1,17 @@
+import  { useState } from 'react';
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:rizwan.abdullah193@gmail.com?subject=Contact from ${name}&body=${encodeURIComponent(message)}%0A%0AReply to: ${email}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="bg-black text-white py-20" id="contact">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
@@ -26,34 +37,50 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex-1 w-full"> 
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block mb-2">Your Name</label>
-                <input type="text" 
+                <input 
+                  type="text" 
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="w-full p-2 rounded bg-gray-800 border border-purple-800 focus:outline-none
                   focus:border-purple-400"
                   placeholder="Enter Your Name"
+                  required
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block mb-2">Email</label>
-                <input type="email" 
+                <input 
+                  type="email" 
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full p-2 rounded bg-gray-800 border border-purple-800 focus:outline-none
                   focus:border-purple-400"
                   placeholder="Enter Your Email"
+                  required
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block mb-2">Message</label>
                 <textarea 
+                  id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="w-full p-2 rounded bg-gray-800 border border-purple-800 focus:outline-none
                   focus:border-purple-400"
                   rows="5"
                   placeholder="Enter Your Message"
+                  required
                 />
               </div>
-              <button className="bg-gradient-to-r from-purple-800 to-purple-400 text-white hidden md:inline
-              transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full">Send</button>
+              <button type="submit" className="bg-gradient-to-r from-purple-800 to-purple-400 text-white
+              transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full w-full">
+                Send Message
+              </button>
             </form>
           </div>
         </div>

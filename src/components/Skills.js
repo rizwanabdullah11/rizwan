@@ -1,5 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact, FaNodeJs } from "react-icons/fa"; // Frontend and Backend icons
-import { SiCplusplus, SiPython, SiCsharp, SiFlutter, SiSqlite, SiMongodb, SiExpress } from "react-icons/si"; // Programming Languages and Database icons
+import { SiCplusplus, SiPython, SiCsharp, SiFlutter, SiSqlite, SiMongodb, 
+  SiExpress, SiRedux, SiNextdotjs  } from "react-icons/si"; // Programming Languages and Database icons
 
 const About = () => {
   return (
@@ -12,7 +13,7 @@ const About = () => {
           
           {/* Frontend Column */}
           <div className="bg-gray-800 border-2 border-purple-800 px-6 pb-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full md:w-1/2">
-            <h3 className="text-3xl font-semibold mb-6 text-purple-800 text-center">Frontend</h3>
+            <h3 className="text-3xl font-semibold mb-6 text-white pt-4 text-center">Frontend</h3>
             <ul className="space-y-4">
               <li className="flex items-center justify-start space-x-4">
                 <FaHtml5 size={30} />
@@ -35,11 +36,11 @@ const About = () => {
                 <span>React.js</span>
               </li>
               <li className="flex items-center justify-start space-x-4">
-                <FaReact size={30} />
+                <SiRedux size={30} />
                 <span>Redux.js</span>
               </li>
               <li className="flex items-center justify-start space-x-4">
-                <FaReact size={30} />
+                <SiNextdotjs size={30} />
                 <span>Next.js</span>
               </li>
             </ul>
@@ -47,7 +48,7 @@ const About = () => {
 
           {/* Programming Languages Column */}
           <div className="bg-gray-800 border-2 border-purple-800 px-6 pb-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full md:w-1/2">
-            <h3 className="text-3xl font-semibold mb-6 text-purple-800 text-center">Programming Languages</h3>
+            <h3 className="text-3xl font-semibold mb-6 text-white pt-4 text-center">Programming Languages</h3>
             <ul className="space-y-4">
               <li className="flex items-center justify-start space-x-4">
                 <FaJs size={30} />
@@ -78,7 +79,7 @@ const About = () => {
 
           {/* Backend & Database Column */}
           <div className="bg-gray-800 border-2 border-purple-800 px-6 pb-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105 w-full md:w-1/2">
-            <h3 className="text-3xl font-semibold mb-6 text-purple-800 text-center">Backend & Database</h3>
+            <h3 className="text-3xl font-semibold mb-6 text-white pt-4 text-center">Backend & Database</h3>
             <ul className="space-y-4">
               <li className="flex items-center justify-start space-x-4">
                 <FaNodeJs size={30} />
